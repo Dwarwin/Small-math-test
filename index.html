@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Test/title></title>
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section class="container">
+    <h1>Тест по математике</h1>
+
+    <ul class="nav nav-tabs">
+        <li id="testProp" class="active"><a data-toggle="tab" href="#settings">Установка</a></li>
+        <li><a id="testTab" data-toggle="tab" href="#test">Проверка</a></li>
+    </ul>
+
+    <div class="tab-content">
+
+        <section id="settings" class="tab-pane fade in active">
+            <h2>Выберите типы примеров для теста</h2>
+            <div class="checkbox">
+                <label><input type="checkbox" id="addition">Сложение</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" id="subtraction">Вычитание</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" id="multiplication">Умножение</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" id="division">Деление</label>
+            </div>
+        </section>
+
+        <section id="test" class="tab-pane fade">
+
+            <section class="container">
+                <div id="resultTab" class="row result hidden">
+                    <button class="btn btn-md btn-info" id='submitTest'>Завершить тест</button>
+                    <button class="btn btn-md btn-warning pull hidden" id='repeatTest'>Повторить тест</button>
+                    <ul class="list-group list-inline pull-right">
+                        <li>Решено примеров: <span id="answersCounter">0</span></li>
+                        <li>Верных ответов: <span id="correctAnswCounter">0</span></li>
+                        <li>Неверных ответов: <span id="wrongAnswCounter">0</span></li>
+                    </ul>
+                </div>
+                <div class="row text-center">
+                    <button class="btn btn-primary" id='toTest'>Приступить к выполнению теста</button>
+                    <div id="testBlock" class="hidden">
+                        <span id="example"></span>
+                        <div class="input-group center-block">
+                            <input class="input-sm" id="answer" type="text" autocomplete="off"
+                                   title="Введите ответ на пример"/>
+                            <button class="btn btn-success" id='submitBtn'>Ответить</button>
+                        </div>
+                    </div>
+                    <div class="alert hidden" role="alert" id="eventMsg"></div>
+                </div>
+            </section>
+
+        </section>
+
+    </div>
+</section>
+
+<script src="js/libs/jquery-3.1.1.min.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.row {
+    height: 60px;
+    margin: 25px 0;
+}
+
+#submitTest {
+    margin: auto 0;
+}
+
+.list-group {
+    margin: auto 25px;
+}
+
+#answersCounter {
+    line-height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    width: 48px;
+    font-size: 24px;
+    border: 2px solid #666;
+    text-align: center;
+}
+
+#correctAnswCounter {
+    line-height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    width: 48px;
+    font-size: 24px;
+    border: 2px solid #666;
+    text-align: center;
+    background-color: rgba(60, 234, 0, 0.45);
+}
+
+#wrongAnswCounter {
+    line-height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    width: 48px;
+    font-size: 24px;
+    border: 2px solid #666;
+    text-align: center;
+    background-color: rgba(255, 2, 10, 0.57);
+}
+
+#testBlock {
+    padding: 25px;
+}
+
+#example {
+    font-size: 7rem;
+    color: rgba(0, 0, 0, 0.83);
+}
+
+#answer {
+    width: 50px;
+}
+
+#eventMsg {
+    margin-top: 30px;
+}
+
+#repeatTest {
+    margin-left: 132px;
+}
